@@ -3,8 +3,8 @@ FROM richarvey/nginx-php-fpm:3.1.6
 # Set working directory
 WORKDIR /var/www/html
 
-# Copy all backend files to the container
-COPY . .
+# Copy all backend files from the backend directory to the container
+COPY backend/ .
 
 # Set configuration environment variables for richarvey/nginx-php-fpm
 ENV SKIP_COMPOSER 0

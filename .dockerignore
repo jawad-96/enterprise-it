@@ -1,0 +1,13 @@
+# Ignore frontend files
+frontend/
+node_modules/
+**/node_modules/
+
+# Ignore backend secrets and local cache
+backend/vendor/
+backend/.env
+backend/database/database.sqlite
+backend/storage/*.key
+.git/
+Dockerfile
+.dockerignore
