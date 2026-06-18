@@ -1,9 +1,9 @@
 FROM richarvey/nginx-php-fpm:3.1.6
 
-# Install PostgreSQL development dependencies and PHP extensions
-RUN apk add --no-cache postgresql-dev \
-    && docker-php-ext-configure pgsql -with-pgsql=/usr/local/pgsql \
-    && docker-php-ext-install pdo_pgsql pgsql
+# Install PHP extensions using the official helper script
+ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions /usr/local/bin/
+RUN chmod +x /usr/local/bin/install-php-extensions && \
+    install-php-extensions pdo_pgsql pgsql
 
 # Set working directory
 WORKDIR /var/www/html
@@ -11,9 +11,9 @@ WORKDIR /var/www/html
 # Copy all backend files from the backend directory to the container
 COPY backend/ .
 
-# Allow Composer to run as root and run composer install during image build
+# Allow Composer to run as root and run composer install during image build (ignore platform requirements to prevent php version errors)
 ENV COMPOSER_ALLOW_SUPERUSER 1
-RUN composer install --no-dev --optimize-autoloader
+RUN composer install --no-dev --optimize-autoloader --ignore-platform-reqs
 
 # Set configuration environment variables for richarvey/nginx-php-fpm
 ENV SKIP_COMPOSER 1
