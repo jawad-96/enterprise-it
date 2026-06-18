@@ -20,8 +20,5 @@ RUN composer install --no-dev --optimize-autoloader --ignore-platform-reqs
 RUN chown -R 9999:9999 /var/www/html/storage /var/www/html/bootstrap/cache /var/www/html/vendor \
     && chmod -R 775 /var/www/html/storage /var/www/html/bootstrap/cache
 
-# Switch back to the default unprivileged user (UID 9999)
-USER 9999
-
 # Expose the HTTP port
 EXPOSE 8080
