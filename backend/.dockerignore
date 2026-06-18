@@ -1,0 +1,10 @@
+vendor/
+node_modules/
+.env
+.git/
+storage/*.key
+tests/
+phpunit.xml
+docker-compose.yml
+Dockerfile
+.dockerignore
