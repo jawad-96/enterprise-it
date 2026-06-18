@@ -1,0 +1,17 @@
+# Ignore dependencies
+node_modules/
+**/node_modules/
+backend/vendor/
+frontend/dist/
+
+# Ignore environment files and database files
+.env
+backend/.env
+frontend/.env
+backend/database/database.sqlite
+
+# System and editor files
+.DS_Store
+.vscode/
+.idea/
+*.log
