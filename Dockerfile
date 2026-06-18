@@ -1,5 +1,10 @@
 FROM richarvey/nginx-php-fpm:3.1.6
 
+# Install PostgreSQL development dependencies and PHP extensions
+RUN apk add --no-cache postgresql-dev \
+    && docker-php-ext-configure pgsql -with-pgsql=/usr/local/pgsql \
+    && docker-php-ext-install pdo_pgsql pgsql
+
 # Set working directory
 WORKDIR /var/www/html
 
