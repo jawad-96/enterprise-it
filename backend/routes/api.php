@@ -17,6 +17,8 @@ Route::post('/contacts', [ContactController::class, 'submit']);
 Route::get('/resources', [CMSController::class, 'index']);
 Route::get('/resources/{slug}', [CMSController::class, 'show']);
 Route::post('/resources', [CMSController::class, 'store']); // Admin backend simulation
+Route::put('/resources/{id}', [CMSController::class, 'update']);
+Route::delete('/resources/{id}', [CMSController::class, 'destroy']);
 
 // Authentication & Secure Client Portal Routes
 // We apply EncryptCookies and StartSession to enable HttpOnly session tracking

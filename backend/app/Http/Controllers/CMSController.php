@@ -70,4 +70,60 @@ class CMSController extends Controller
             'data' => $resource
         ], 201);
     }
+
+    /**
+     * Update an existing resource.
+     */
+    public function update(Request $request, $id)
+    {
+        $resource = Resource::find($id);
+
+        if (!$resource) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Resource not found'
+            ], 404);
+        }
+
+        $validated = $request->validate([
+            'category' => 'sometimes|required|string|in:sustainability,blog,news',
+            'title' => 'sometimes|required|string|max:255',
+            'body' => 'sometimes|required|string',
+            'image_url' => 'nullable|string|max:255',
+        ]);
+
+        if (isset($validated['title'])) {
+            $validated['slug'] = Str::slug($validated['title']);
+        }
+
+        $resource->update($validated);
+
+        return response()->json([
+            'success' => true,
+            'message' => 'Resource updated successfully.',
+            'data' => $resource
+        ]);
+    }
+
+    /**
+     * Delete an existing resource.
+     */
+    public function destroy($id)
+    {
+        $resource = Resource::find($id);
+
+        if (!$resource) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Resource not found'
+            ], 404);
+        }
+
+        $resource->delete();
+
+        return response()->json([
+            'success' => true,
+            'message' => 'Resource deleted successfully.'
+        ]);
+    }
 }

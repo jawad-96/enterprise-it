@@ -1128,8 +1128,10 @@ const savePost = async () => {
       image_url: form.value.image_url || null,
     };
 
-    const method = 'POST';
-    const url = `${API_BASE_URL}/api/resources`;
+    const method = editorEditId.value ? 'PUT' : 'POST';
+    const url = editorEditId.value 
+      ? `${API_BASE_URL}/api/resources/${editorEditId.value}`
+      : `${API_BASE_URL}/api/resources`;
 
     const response = await fetch(url, {
       method,
@@ -1142,7 +1144,7 @@ const savePost = async () => {
 
     const data = await response.json();
     if (data.success) {
-      triggerToast('Post saved successfully.', 'ok');
+      triggerToast(editorEditId.value ? 'Post updated successfully.' : 'Post saved successfully.', 'ok');
       await fetchPosts();
       nav(form.value.category);
     } else {
@@ -1156,8 +1158,25 @@ const savePost = async () => {
 
 const deletePost = async (id) => {
   if (!confirm('Are you sure you want to delete this post?')) return;
-  triggerToast('Mock delete - deletion simulation completed.', 'inf');
-  posts.value = posts.value.filter(p => p.id !== id);
+  
+  try {
+    const response = await fetch(`${API_BASE_URL}/api/resources/${id}`, {
+      method: 'DELETE',
+      headers: {
+        'Accept': 'application/json',
+      },
+    });
+    const data = await response.json();
+    if (response.ok && data.success) {
+      triggerToast('Post deleted successfully.', 'ok');
+      await fetchPosts();
+    } else {
+      triggerToast(data.message || 'Failed to delete post.', 'err');
+    }
+  } catch (error) {
+    console.error('Error deleting CMS post:', error);
+    triggerToast('Network error deleting post.', 'err');
+  }
 };
 
 // Text helpers
