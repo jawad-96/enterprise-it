@@ -13,6 +13,10 @@ COPY --chown=webuser:webuser backend/ .
 ENV COMPOSER_ALLOW_SUPERUSER 1
 RUN composer install --no-dev --optimize-autoloader --ignore-platform-reqs
 
+# Ensure correct permissions for Laravel storage, cache, and vendor directories
+RUN chown -R webuser:webuser /var/www/html/storage /var/www/html/bootstrap/cache /var/www/html/vendor \
+    && chmod -R 775 /var/www/html/storage /var/www/html/bootstrap/cache
+
 # Switch back to the default unprivileged webuser
 USER webuser
 
