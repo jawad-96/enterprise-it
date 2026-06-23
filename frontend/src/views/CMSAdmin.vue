@@ -3,7 +3,7 @@
     <!-- TOPBAR -->
     <div class="topbar">
       <div class="tb-logo">
-        <em>enterprise</em><strong>IT</strong><span class="tb-badge">CMS Admin</span>
+        <em>enterprise</em> <strong>IT</strong><span class="tb-badge">CMS Admin</span>
       </div>
       <div class="tb-right">
         <div class="tb-env"><div class="tb-dot"></div><span>Live</span></div>

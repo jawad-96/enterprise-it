@@ -113,7 +113,7 @@
         <div class="tbar-badges">
           <div class="tbadge green"><i class="ti ti-leaf" aria-hidden="true"></i>ESG Accredited</div>
           <div class="tbadge green"><i class="ti ti-recycle" aria-hidden="true"></i>Zero Landfill</div>
-          <div class="tbadge"><i class="ti ti-certificate" aria-hidden="true"></i>ISO Certified</div>
+          <div class="tbadge"><i class="ti ti-certificate" aria-hidden="true"></i>ISO Compliant</div>
           <div class="tbadge"><i class="ti ti-file-certificate" aria-hidden="true"></i>NIST 800-88</div>
           <div class="tbadge green"><i class="ti ti-heart" aria-hidden="true"></i>Tech Donation Partner</div>
           <div class="tbadge"><i class="ti ti-map-pin" aria-hidden="true"></i>SA Owned &amp; Operated</div>
@@ -599,7 +599,7 @@
               </div>
             </div>
             <p class="cert-desc">International information security standard governing how we manage and protect information through the full IT asset lifecycle, including data disposal.</p>
-            <div class="cert-proof"><i class="ti ti-check" aria-hidden="true"></i>ISO certified</div>
+            <div class="cert-proof"><i class="ti ti-check" aria-hidden="true"></i>ISO compliant</div>
           </div>
           <div class="cert-card fade-up" ref="fadeEl15" style="transition-delay:.04s;">
             <div class="cert-top">
@@ -646,11 +646,11 @@
 
         <div class="testi-card fade-up" ref="fadeEl18" aria-label="Client testimonial">
           <div class="testi-stars" aria-label="5 out of 5 stars">
-            <i class="ti ti-star" aria-hidden="true"></i>
-            <i class="ti ti-star" aria-hidden="true"></i>
-            <i class="ti ti-star" aria-hidden="true"></i>
-            <i class="ti ti-star" aria-hidden="true"></i>
-            <i class="ti ti-star" aria-hidden="true"></i>
+            <i class="ti ti-star-filled" aria-hidden="true"></i>
+            <i class="ti ti-star-filled" aria-hidden="true"></i>
+            <i class="ti ti-star-filled" aria-hidden="true"></i>
+            <i class="ti ti-star-filled" aria-hidden="true"></i>
+            <i class="ti ti-star-filled" aria-hidden="true"></i>
           </div>
           <blockquote class="testi-quote">
             "The ESG reporting package alone justified the entire engagement. Our board now has clear, documented evidence of our technology sustainability commitments — CO₂ offsets, landfill diversion figures, donation outcomes — all in a single branded document produced automatically. It's transformed how we communicate our sustainability credentials to shareholders."

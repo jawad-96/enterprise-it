@@ -76,7 +76,7 @@
             </div>
             <div class="aside-card">
               <div class="aside-title">Follow Our Coverage</div>
-              <a href="https://linkedin.com" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:10px;padding:5px 0;color:rgba(255,255,255,0.7);text-decoration:none;">
+              <a href="https://www.linkedin.com/company/enterpriseitau/" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:10px;padding:5px 0;color:rgba(255,255,255,0.7);text-decoration:none;">
                 <div style="width:32px;height:32px;border-radius:7px;background:rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;"><i class="ti ti-brand-linkedin" style="font-size:17px;"></i></div>
                 <div><div style="font-size:12px;font-weight:600;color:#fff;">Follow on LinkedIn</div><div style="font-size:10.5px;color:rgba(255,255,255,0.45);">enterprise IT updates</div></div>
               </a>
@@ -297,7 +297,7 @@ const topicCategories = [
   { id: 'company', name: 'Company News', icon: 'ti ti-building', class: 'navy' },
   { id: 'industry', name: 'Industry News', icon: 'ti ti-world', class: 'slate' },
   { id: 'cybersecurity', name: 'Cybersecurity Alerts', icon: 'ti ti-shield-lock', class: 'green' },
-  { id: 'award', name: 'Awards & Milestones', icon: 'ti ti-star', class: 'amber' }
+  { id: 'award', name: 'Awards & Milestones', icon: 'ti ti-star-filled', class: 'amber' }
 ];
 
 const getTopic = (post) => {

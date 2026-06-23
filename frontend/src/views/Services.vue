@@ -1179,7 +1179,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue';
+import { ref, onMounted, onUnmounted, watch, nextTick } from 'vue';
 
 const activeSection = ref('deployment');
 
@@ -1195,6 +1195,22 @@ const navLinks = [
   { anchor: 'governance', label: 'Governance', icon: 'ti ti-clipboard-check' },
   { anchor: 'analytics', label: 'Analytics', icon: 'ti ti-chart-bar' },
 ];
+
+watch(activeSection, async (newVal) => {
+  await nextTick();
+  const container = document.querySelector('.svc-nav-inner');
+  const activeEl = document.querySelector('.svc-nav-link.active');
+  if (container && activeEl) {
+    const containerRect = container.getBoundingClientRect();
+    const activeRect = activeEl.getBoundingClientRect();
+    const relativeLeft = activeRect.left - containerRect.left + container.scrollLeft;
+    const targetScrollLeft = relativeLeft - (containerRect.width / 2) + (activeRect.width / 2);
+    container.scrollTo({
+      left: targetScrollLeft,
+      behavior: 'smooth',
+    });
+  }
+});
 
 let fadeObserver = null;
 let sectionObserver = null;

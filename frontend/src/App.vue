@@ -4,11 +4,12 @@
     <nav v-if="showNav" class="nav" id="main-nav" aria-label="Main navigation" :class="{ 'nav-scrolled': isScrolled }">
       <router-link to="/" class="logo" aria-label="enterprise IT — home" @click="closeMobileNav">
         <div class="logo-dot" aria-hidden="true"></div>
-        <div class="logo-text"><em>enterprise</em><strong>IT</strong></div>
+        <div class="logo-text"><em>enterprise</em> <strong>IT</strong></div>
       </router-link>
 
       <!-- Desktop Nav links -->
       <div class="nav-r" role="list">
+        <router-link to="/" class="nl" role="listitem" :class="{ active: route.path === '/' }">Home</router-link>
         <!-- SERVICES dropdown trigger -->
         <div style="position:relative;" role="listitem" @mouseenter="servicesDropdownOpen = true" @mouseleave="servicesDropdownOpen = false">
           <button class="nl" id="nav-services" aria-haspopup="true" :aria-expanded="servicesDropdownOpen" aria-controls="dd-services" :class="{ active: route.path === '/services', open: servicesDropdownOpen }" @click="toggleServices">
@@ -30,7 +31,7 @@
               <div>
                 <div class="drop-section">
                   <div class="drop-section-label">Pillar 2 — Cyber Defence</div>
-                  <router-link to="/services#soc" class="drop-item" role="menuitem" @click="closeDropdowns"><div class="drop-item-icon navy"><i class="ti ti-radar" aria-hidden="true"></i></div><div><div class="drop-item-name">SOC Operations</div><div class="drop-item-desc">24/7 managed detection, SIEM/Sentinel</div></div></router-link>
+                  <router-link to="/services#soc" class="drop-item" role="menuitem" @click="closeDropdowns"><div class="drop-item-icon navy"><i class="ti ti-radar" aria-hidden="true"></i></div><div><div class="drop-item-name">SOC Operations</div><div class="drop-item-desc">24/7 managed detection, SIEM/SOAR</div></div></router-link>
                   <router-link to="/services#iam" class="drop-item" role="menuitem" @click="closeDropdowns"><div class="drop-item-icon purple"><i class="ti ti-lock-access" aria-hidden="true"></i></div><div><div class="drop-item-name">Identity &amp; Access (IAM)</div><div class="drop-item-desc">Lifecycle management, MFA, Zero Trust</div></div></router-link>
                   <router-link to="/services#forensics" class="drop-item" role="menuitem" @click="closeDropdowns"><div class="drop-item-icon amber"><i class="ti ti-alert-triangle" aria-hidden="true"></i></div><div><div class="drop-item-name">Incident Response</div><div class="drop-item-desc">Forensics, data recovery, ransomware</div></div></router-link>
                   <router-link to="/services#analytics" class="drop-item" role="menuitem" @click="closeDropdowns"><div class="drop-item-icon teal"><i class="ti ti-chart-bar" aria-hidden="true"></i></div><div><div class="drop-item-name">Analytics &amp; Governance</div><div class="drop-item-desc">Power BI, Tableau, data governance</div></div></router-link>
@@ -59,7 +60,6 @@
 
         <router-link to="/about" class="nl" role="listitem" :class="{ active: route.path === '/about' }">About Us</router-link>
         <router-link to="/contact" class="nl" role="listitem" :class="{ active: route.path === '/contact' }">Contact</router-link>
-        <router-link to="/privacy" class="nl" role="listitem" :class="{ active: route.path === '/privacy' }">Privacy</router-link>
 
         <div class="ndiv" aria-hidden="true"></div>
         <router-link to="/login" class="nportal" role="listitem"><i class="ti ti-lock" aria-hidden="true"></i>Client Portal</router-link>
@@ -75,6 +75,9 @@
     <div class="mob-overlay" id="mob-overlay" aria-hidden="true" :class="{ open: mobileMenuOpen }" @click="closeMobileNav"></div>
     <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" :aria-hidden="!mobileMenuOpen" :class="{ open: mobileMenuOpen }">
       <div class="mobile-nav-inner">
+        <div class="mob-section-label">General</div>
+        <router-link to="/" class="mob-link" @click="closeMobileNav"><span class="mob-link-inner"><i class="ti ti-home" aria-hidden="true"></i>Home</span></router-link>
+
         <div class="mob-section-label">Services</div>
         <!-- Services expandable -->
         <button class="mob-expand-btn" id="mob-svc-btn" :aria-expanded="mobileServicesOpen" aria-controls="mob-svc-sub" :class="{ open: mobileServicesOpen }" @click="mobileServicesOpen = !mobileServicesOpen">
@@ -126,10 +129,10 @@
       <div class="footer-in">
         <div class="footer-top">
           <div>
-            <div class="flogo"><em>enterprise</em><strong>IT</strong></div>
-            <p class="ftagline">SA Owned &amp; Operated. Servicing enterprise clients Australia-wide from our Adelaide CBD headquarters. ISO certified. NIST 800-88 compliant.</p>
+            <div class="flogo"><em>enterprise</em> <strong>IT</strong></div>
+            <p class="ftagline">SA Owned &amp; Operated. Servicing enterprise clients Australia-wide from our Adelaide CBD headquarters. ISO compliant. NIST 800-88 compliant.</p>
             <div class="fsocial">
-              <a href="https://linkedin.com" class="fsoc" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="ti ti-brand-linkedin" aria-hidden="true"></i></a>
+              <a href="https://www.linkedin.com/company/enterpriseitau/" class="fsoc" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="ti ti-brand-linkedin" aria-hidden="true"></i></a>
             </div>
           </div>
           <div>
@@ -145,7 +148,7 @@
             <div class="fctitle">Contact</div>
             <div class="fcontact"><i class="ti ti-map-pin" aria-hidden="true"></i>Adelaide CBD, South Australia</div>
             <div class="fcontact"><i class="ti ti-phone" aria-hidden="true"></i>+61 8 XXXX XXXX</div>
-            <div class="fcontact"><i class="ti ti-mail" aria-hidden="true"></i>contact@enterpriseit.com.au</div>
+            <div class="fcontact"><i class="ti ti-mail" aria-hidden="true"></i>support@enterpriseit.com.au</div>
             <div class="fcontact"><i class="ti ti-world" aria-hidden="true"></i>enterpriseit.com.au</div>
             <div style="margin-top:18px;">
               <div class="fctitle">Company</div>

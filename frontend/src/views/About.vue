@@ -26,12 +26,12 @@
             </p>
             <div class="hero-actions">
               <router-link to="/contact" class="btn-white"><i class="ti ti-mail" aria-hidden="true"></i>Get in Touch</router-link>
-              <a href="https://linkedin.com" class="btn-slate" target="_blank" rel="noopener"><i class="ti ti-brand-linkedin" aria-hidden="true"></i>Follow us on LinkedIn</a>
+              <a href="https://www.linkedin.com/company/enterpriseitau/" class="btn-slate" target="_blank" rel="noopener"><i class="ti ti-brand-linkedin" aria-hidden="true"></i>Follow us on LinkedIn</a>
             </div>
             <div class="hero-stats" aria-label="Company highlights">
               <div class="hstat"><div class="hstat-num">SA</div><div class="hstat-label">Owned &amp;<br>Operated</div></div>
               <div class="hstat"><div class="hstat-num">24/7</div><div class="hstat-label">SOC &amp; Cyber<br>Operations</div></div>
-              <div class="hstat"><div class="hstat-num">ISO</div><div class="hstat-label">Certified<br>Standards</div></div>
+              <div class="hstat"><div class="hstat-num">ISO</div><div class="hstat-label">Compliant</div></div>
               <div class="hstat"><div class="hstat-num">AUS</div><div class="hstat-label">-wide Service<br>Delivery</div></div>
             </div>
           </div>
@@ -86,7 +86,7 @@
       <div class="tbar-in">
         <span class="tbar-label">Our Accreditations</span>
         <div class="tbar-badges">
-          <div class="tbadge"><i class="ti ti-shield-check" aria-hidden="true"></i>ISO Certified</div>
+          <div class="tbadge"><i class="ti ti-shield-check" aria-hidden="true"></i>ISO Compliant</div>
           <div class="tbadge"><i class="ti ti-file-certificate" aria-hidden="true"></i>NIST 800-88</div>
           <div class="tbadge"><i class="ti ti-building-skyscraper" aria-hidden="true"></i>Adelaide CBD HQ</div>
           <div class="tbadge"><i class="ti ti-leaf" aria-hidden="true"></i>ESG Reporting</div>
@@ -388,7 +388,7 @@
             <div class="esg-icon"><i class="ti ti-world" aria-hidden="true"></i></div>
             <div class="esg-title">Environmental</div>
             <p class="esg-desc">Certified sustainable disposal, zero landfill commitment, carbon offset tracking, and e-waste reduction embedded in every retirement workflow.</p>
-            <div class="esg-badge"><i class="ti ti-check" aria-hidden="true"></i>ISO &amp; ESG Certified</div>
+            <div class="esg-badge"><i class="ti ti-check" aria-hidden="true"></i>ISO &amp; ESG Compliant</div>
           </div>
           <div class="esg-card fade-up" style="transition-delay:0.08s;">
             <div class="esg-icon"><i class="ti ti-users" aria-hidden="true"></i></div>
@@ -482,7 +482,7 @@
         <div class="testi-grid">
           <article class="tcard fade-up">
             <div class="tcard-stars" aria-label="5 out of 5 stars">
-              <i class="ti ti-star" aria-hidden="true"></i><i class="ti ti-star" aria-hidden="true"></i><i class="ti ti-star" aria-hidden="true"></i><i class="ti ti-star" aria-hidden="true"></i><i class="ti ti-star" aria-hidden="true"></i>
+              <i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i>
             </div>
             <blockquote class="tcard-quote">"The ITAD process was seamless — certificates of destruction delivered same day, ESG report ready within the week. Exactly what we needed for our compliance audit."</blockquote>
             <div class="tcard-author">
@@ -493,7 +493,7 @@
 
           <article class="tcard fade-up" style="transition-delay:0.1s;">
             <div class="tcard-stars" aria-label="5 out of 5 stars">
-              <i class="ti ti-star" aria-hidden="true"></i><i class="ti ti-star" aria-hidden="true"></i><i class="ti ti-star" aria-hidden="true"></i><i class="ti ti-star" aria-hidden="true"></i><i class="ti ti-star" aria-hidden="true"></i>
+              <i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i>
             </div>
             <blockquote class="tcard-quote">"Our SOC deployment was up in days. The team's knowledge of SIEM and Sentinel is exceptional — we finally have real visibility over our threat landscape."</blockquote>
             <div class="tcard-author">
@@ -504,7 +504,7 @@
 
           <article class="tcard fade-up" style="transition-delay:0.05s;">
             <div class="tcard-stars" aria-label="5 out of 5 stars">
-              <i class="ti ti-star" aria-hidden="true"></i><i class="ti ti-star" aria-hidden="true"></i><i class="ti ti-star" aria-hidden="true"></i><i class="ti ti-star" aria-hidden="true"></i><i class="ti ti-star" aria-hidden="true"></i>
+              <i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i>
             </div>
             <blockquote class="tcard-quote">"What sets enterprise IT apart is that they're local — genuinely local. We can pick up the phone and speak to the same person every time. That accountability is rare."</blockquote>
             <div class="tcard-author">
@@ -515,7 +515,7 @@
 
           <article class="tcard fade-up" style="transition-delay:0.15s;">
             <div class="tcard-stars" aria-label="5 out of 5 stars">
-              <i class="ti ti-star" aria-hidden="true"></i><i class="ti ti-star" aria-hidden="true"></i><i class="ti ti-star" aria-hidden="true"></i><i class="ti ti-star" aria-hidden="true"></i><i class="ti ti-star" aria-hidden="true"></i>
+              <i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i>
             </div>
             <blockquote class="tcard-quote">"The ESG reporting package alone justified the engagement. Our board now has clear, documented evidence of our technology sustainability commitments — and it's produced automatically."</blockquote>
             <div class="tcard-author">
@@ -565,7 +565,7 @@
                 <div class="hq-ci"><i class="ti ti-mail" aria-hidden="true"></i></div>
                 <div>
                   <div class="hq-clabel">Email</div>
-                  <div class="hq-cval">contact@enterpriseit.com.au</div>
+                  <div class="hq-cval">support@enterpriseit.com.au</div>
                 </div>
               </div>
               <div class="hq-contact-row">
@@ -577,7 +577,7 @@
               </div>
             </div>
 
-            <a href="https://linkedin.com" class="linkedin-card" target="_blank" rel="noopener" aria-label="Follow enterprise IT on LinkedIn">
+            <a href="https://www.linkedin.com/company/enterpriseitau/" class="linkedin-card" target="_blank" rel="noopener" aria-label="Follow enterprise IT on LinkedIn">
               <div class="li-icon"><i class="ti ti-brand-linkedin" aria-hidden="true"></i></div>
               <div>
                 <div class="li-title">Follow enterprise IT on LinkedIn</div>

@@ -81,7 +81,7 @@
       <div class="tbar-in">
         <span class="tbar-label">Trusted by enterprise</span>
         <div class="tbar-badges">
-          <div class="tbadge"><i class="ti ti-shield-check" aria-hidden="true"></i>ISO Certified</div>
+          <div class="tbadge"><i class="ti ti-shield-check" aria-hidden="true"></i>ISO Compliant</div>
           <div class="tbadge"><i class="ti ti-file-certificate" aria-hidden="true"></i>NIST 800-88</div>
           <div class="tbadge"><i class="ti ti-building-skyscraper" aria-hidden="true"></i>Adelaide CBD HQ</div>
           <div class="tbadge"><i class="ti ti-leaf" aria-hidden="true"></i>ESG Reporting</div>
@@ -123,7 +123,7 @@
                   <div class="info-ico"><i class="ti ti-mail" aria-hidden="true"></i></div>
                   <div>
                     <div class="info-label">Email</div>
-                    <div class="info-val">contact@<br>enterpriseit.com.au</div>
+                    <div class="info-val">support@<br>enterpriseit.com.au</div>
                   </div>
                 </div>
                 <div class="info-row">
@@ -147,7 +147,7 @@
             </button>
 
             <!-- LinkedIn -->
-            <a href="https://linkedin.com" class="li-card fade-up" style="transition-delay:.12s;" target="_blank" rel="noopener" aria-label="Follow enterprise IT on LinkedIn">
+            <a href="https://www.linkedin.com/company/enterpriseitau/" class="li-card fade-up" style="transition-delay:.12s;" target="_blank" rel="noopener" aria-label="Follow enterprise IT on LinkedIn">
               <div class="li-ico"><i class="ti ti-brand-linkedin" aria-hidden="true"></i></div>
               <div>
                 <div class="li-text-title">Follow us on LinkedIn</div>

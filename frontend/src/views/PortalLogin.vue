@@ -21,7 +21,7 @@
       <!-- Logo -->
       <router-link to="/" class="portal-logo" aria-label="enterprise IT — return to homepage">
         <div class="logo-dot" aria-hidden="true"></div>
-        <div class="logo-text"><em>enterprise</em><strong>IT</strong></div>
+        <div class="logo-text"><em>enterprise</em> <strong>IT</strong></div>
         <span class="logo-badge">Client Portal</span>
       </router-link>
 
@@ -210,7 +210,7 @@
         <div class="sec-badge"><i class="ti ti-brand-windows" aria-hidden="true"></i>Microsoft Entra ID</div>
         <div class="sec-badge"><i class="ti ti-shield-lock" aria-hidden="true"></i>OIDC + PKCE</div>
         <div class="sec-badge"><i class="ti ti-cookie" aria-hidden="true"></i>HttpOnly Sessions</div>
-        <div class="sec-badge"><i class="ti ti-certificate" aria-hidden="true"></i>ISO Certified</div>
+        <div class="sec-badge"><i class="ti ti-certificate" aria-hidden="true"></i>ISO Compliant</div>
         <div class="sec-badge"><i class="ti ti-lock" aria-hidden="true"></i>TLS Encrypted</div>
       </div>
     </main>

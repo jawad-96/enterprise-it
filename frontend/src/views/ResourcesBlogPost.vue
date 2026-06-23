@@ -54,7 +54,7 @@
               <div class="pa-role">{{ formatTopicName(getTopic(post)) }} specialists · Adelaide CBD</div>
             </div>
             <div class="pa-right">
-              <a href="https://linkedin.com" target="_blank" rel="noopener" class="share-btn" aria-label="Share on LinkedIn"><i class="ti ti-brand-linkedin" aria-hidden="true"></i>Share</a>
+              <a href="https://www.linkedin.com/company/enterpriseitau/" target="_blank" rel="noopener" class="share-btn" aria-label="Share on LinkedIn"><i class="ti ti-brand-linkedin" aria-hidden="true"></i>Share</a>
               <button class="share-btn" @click="copyLink" aria-label="Copy article link"><i class="ti ti-link" aria-hidden="true"></i>{{ copyBtnText }}</button>
             </div>
           </div>
@@ -90,7 +90,7 @@
             <div class="share-row" aria-label="Share this article">
               <span class="share-label">Share this article</span>
               <div class="share-btns">
-                <a href="https://linkedin.com" target="_blank" rel="noopener" class="sh-btn linkedin" aria-label="Share on LinkedIn"><i class="ti ti-brand-linkedin" aria-hidden="true"></i>LinkedIn</a>
+                <a href="https://www.linkedin.com/company/enterpriseitau/" target="_blank" rel="noopener" class="sh-btn linkedin" aria-label="Share on LinkedIn"><i class="ti ti-brand-linkedin" aria-hidden="true"></i>LinkedIn</a>
                 <button class="sh-btn" @click="copyLink" aria-label="Copy link"><i class="ti ti-link" aria-hidden="true"></i>{{ copyBtnText }}</button>
                 <a :href="'mailto:?subject=' + encodeURIComponent(post.title) + '&body=' + encodeURIComponent('Check out this article: ' + shareUrl)" class="sh-btn" aria-label="Share by email"><i class="ti ti-mail" aria-hidden="true"></i>Email</a>
               </div>
@@ -204,7 +204,7 @@ const topicCategories = [
   { id: 'data', name: 'Data Governance', icon: 'ti ti-database' },
   { id: 'company', name: 'Company News', icon: 'ti ti-building' },
   { id: 'industry', name: 'Industry News', icon: 'ti ti-world' },
-  { id: 'award', name: 'Awards & Milestones', icon: 'ti ti-star' }
+  { id: 'award', name: 'Awards & Milestones', icon: 'ti ti-star-filled' }
 ];
 
 const getTopic = (p) => {

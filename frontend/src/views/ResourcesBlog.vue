@@ -137,7 +137,7 @@
                 <div class="fp-img" :class="getTopicBg(getTopic(featuredPost))" aria-hidden="true">
                   <div class="fp-img-grid"></div>
                   <i :class="getTopicIcon(getTopic(featuredPost))" class="fp-img-icon"></i>
-                  <div class="fp-featured-badge"><i class="ti ti-star" style="font-size:10px;"></i>Featured</div>
+                  <div class="fp-featured-badge"><i class="ti ti-star-filled" style="font-size:10px;"></i>Featured</div>
                   <div class="fp-cat-badge"><i :class="getTopicIcon(getTopic(featuredPost))" style="font-size:11px;"></i>{{ formatTopicName(getTopic(featuredPost)) }}</div>
                 </div>
 

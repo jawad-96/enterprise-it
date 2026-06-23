@@ -39,7 +39,7 @@
           <div class="hero-stats" aria-label="Key service metrics">
             <div class="hstat">
               <div class="hstat-num">24/7</div>
-              <div class="hstat-label">SOC Operations<br />SIEM/Sentinel</div>
+              <div class="hstat-label">SOC Operations<br />SIEM/SOAR</div>
             </div>
             <div class="hstat">
               <div class="hstat-num">NIST<br />800-88</div>
@@ -47,7 +47,7 @@
             </div>
             <div class="hstat">
               <div class="hstat-num">ISO</div>
-              <div class="hstat-label">Certified<br />Standards</div>
+              <div class="hstat-label">Compliant</div>
             </div>
             <div class="hstat">
               <div class="hstat-num">AUS-wide</div>
@@ -123,7 +123,7 @@
       <div class="tbar-inner">
         <span class="tbar-left">Compliance &amp; Accreditation</span>
         <div class="tbar-badges">
-          <div class="tbadge"><i class="ti ti-shield-check" aria-hidden="true"></i>ISO Certified</div>
+          <div class="tbadge"><i class="ti ti-shield-check" aria-hidden="true"></i>ISO Compliant</div>
           <div class="tbadge"><i class="ti ti-file-certificate" aria-hidden="true"></i>NIST 800-88</div>
           <div class="tbadge"><i class="ti ti-building-skyscraper" aria-hidden="true"></i>Adelaide CBD HQ</div>
           <div class="tbadge"><i class="ti ti-leaf" aria-hidden="true"></i>ESG Reporting</div>
@@ -149,7 +149,7 @@
         </div>
         <div class="metric">
           <div><span class="metric-num">{{ metrics.m4 }}</span><span class="metric-unit">/7</span></div>
-          <div class="metric-label">SOC monitoring<br />SIEM &amp; Sentinel</div>
+          <div class="metric-label">SOC monitoring<br />SIEM &amp; SOAR</div>
         </div>
       </div>
     </div>
@@ -171,8 +171,8 @@
             </div>
             <div class="svc-pb">
               <div class="svc-kpi">
-                <div class="svc-kpi-val">GPS</div>
-                <div class="svc-kpi-label">Tracked transit<br />Australia-wide</div>
+                <div class="svc-kpi-val long-val">Data Sanitisation</div>
+                <div class="svc-kpi-label long-label">Military-grade<br />data eradication</div>
               </div>
               <ul class="svc-list">
                 <li class="svc-li">
@@ -209,7 +209,7 @@
             <div class="svc-pb">
               <div class="svc-kpi" style="background: #edf0fb">
                 <div class="svc-kpi-val">24/7</div>
-                <div class="svc-kpi-label">Managed detection<br />SIEM / Sentinel</div>
+                <div class="svc-kpi-label">Managed detection<br />SIEM / SOAR</div>
               </div>
               <ul class="svc-list">
                 <li class="svc-li">
@@ -221,7 +221,7 @@
                   phishing-resistant MFA
                 </li>
                 <li class="svc-li">
-                  <i class="ti ti-database-lock" aria-hidden="true"></i>Data governance, DLP &amp;
+                  <i class="ti ti-database" aria-hidden="true"></i>Data governance, DLP &amp;
                   compliance auditing
                 </li>
                 <li class="svc-li">
@@ -307,7 +307,7 @@
               deliver.
             </p>
             <div class="why-proof">
-              <i class="ti ti-check" aria-hidden="true"></i>ISO &amp; NIST certified
+              <i class="ti ti-check" aria-hidden="true"></i>ISO &amp; NIST compliant
             </div>
           </div>
         </div>
@@ -363,9 +363,9 @@
         <div class="testi-grid">
           <article class="tcard fade-up">
             <div class="tcard-stars" aria-label="5 out of 5 stars">
-              <i class="ti ti-star" aria-hidden="true"></i><i class="ti ti-star" aria-hidden="true"></i
-              ><i class="ti ti-star" aria-hidden="true"></i><i class="ti ti-star" aria-hidden="true"></i
-              ><i class="ti ti-star" aria-hidden="true"></i>
+              <i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i
+              ><i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i
+              ><i class="ti ti-star-filled" aria-hidden="true"></i>
             </div>
             <blockquote class="tcard-quote">
               "The ITAD process was seamless — certificates of destruction delivered same day, ESG
@@ -381,9 +381,9 @@
           </article>
           <article class="tcard fade-up">
             <div class="tcard-stars" aria-label="5 out of 5 stars">
-              <i class="ti ti-star" aria-hidden="true"></i><i class="ti ti-star" aria-hidden="true"></i
-              ><i class="ti ti-star" aria-hidden="true"></i><i class="ti ti-star" aria-hidden="true"></i
-              ><i class="ti ti-star" aria-hidden="true"></i>
+              <i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i
+              ><i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i
+              ><i class="ti ti-star-filled" aria-hidden="true"></i>
             </div>
             <blockquote class="tcard-quote">
               "Our SOC deployment was up in days. The team's knowledge of SIEM and Sentinel is
@@ -894,12 +894,18 @@ onUnmounted(() => {
   font-weight: 800;
   color: #002366;
 }
+.svc-kpi-val.long-val {
+  font-size: 14px;
+}
 .svc-kpi-label {
   font-size: 11px;
   color: #708090;
   line-height: 1.3;
   text-align: right;
   max-width: 100px;
+}
+.svc-kpi-label.long-label {
+  max-width: 150px;
 }
 .svc-list {
   list-style: none;

@@ -21,7 +21,7 @@
       <!-- Logo matching the corporate header -->
       <router-link to="/" class="portal-logo" aria-label="enterprise IT — return to homepage">
         <div class="logo-dot" aria-hidden="true"></div>
-        <div class="logo-text"><em>enterprise</em><strong>IT</strong></div>
+        <div class="logo-text"><em>enterprise</em> <strong>IT</strong></div>
         <span class="logo-badge">CMS Admin</span>
       </router-link>
 

@@ -7,7 +7,7 @@
       <div class="pnav-left">
         <router-link to="/" class="pnav-logo" aria-label="enterprise IT home">
           <div class="logo-dot" aria-hidden="true"></div>
-          <div class="logo-text"><em>enterprise</em><strong>IT</strong></div>
+          <div class="logo-text"><em>enterprise</em> <strong>IT</strong></div>
         </router-link>
         <span class="portal-badge" aria-label="Portal Badge">{{ user?.account_type === 'partner' ? 'Partner Portal' : 'Client Portal' }}</span>
       </div>

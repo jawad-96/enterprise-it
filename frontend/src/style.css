@@ -212,3 +212,29 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.05);
 }
+
+/* Custom Filled Tabler Star Icon webfont integration */
+@font-face {
+  font-family: "tabler-icons-filled";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/fonts/tabler-icons-filled.woff2") format("woff2"),
+       url("https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/fonts/tabler-icons-filled.woff") format("woff"),
+       url("https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/fonts/tabler-icons-filled.ttf") format("truetype");
+}
+
+.ti-star-filled::before {
+  content: "\f6a6";
+}
+
+.ti-star-filled {
+  font-family: "tabler-icons-filled" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
