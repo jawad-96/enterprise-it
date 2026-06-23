@@ -116,7 +116,7 @@
                   <div class="info-ico"><i class="ti ti-phone" aria-hidden="true"></i></div>
                   <div>
                     <div class="info-label">Phone</div>
-                    <div class="info-val">+61 8 XXXX XXXX</div>
+                    <div class="info-val">+61 494 614 221</div>
                   </div>
                 </div>
                 <div class="info-row">
@@ -408,7 +408,7 @@
       <div class="ctaband-in">
         <div class="ctaband-left">
           <h3>Prefer to speak with someone directly?</h3>
-          <p>Call our Adelaide team on +61 8 XXXX XXXX — Mon–Fri, 8am–6pm ACST.</p>
+          <p>Call our Adelaide team on +61 494 614 221 — Mon–Fri, 8am–6pm ACST.</p>
         </div>
         <div class="ctaband-btns">
           <router-link to="/login" class="cta-white">Access Client Portal →</router-link>

@@ -558,7 +558,7 @@
                 <div class="hq-ci"><i class="ti ti-phone" aria-hidden="true"></i></div>
                 <div>
                   <div class="hq-clabel">Phone</div>
-                  <div class="hq-cval">+61 8 XXXX XXXX</div>
+                  <div class="hq-cval">+61 494 614 221</div>
                 </div>
               </div>
               <div class="hq-contact-row">

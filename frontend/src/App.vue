@@ -147,7 +147,7 @@
           <div>
             <div class="fctitle">Contact</div>
             <div class="fcontact"><i class="ti ti-map-pin" aria-hidden="true"></i>Adelaide CBD, South Australia</div>
-            <div class="fcontact"><i class="ti ti-phone" aria-hidden="true"></i>+61 8 XXXX XXXX</div>
+            <div class="fcontact"><i class="ti ti-phone" aria-hidden="true"></i>+61 494 614 221</div>
             <div class="fcontact"><i class="ti ti-mail" aria-hidden="true"></i>support@enterpriseit.com.au</div>
             <div class="fcontact"><i class="ti ti-world" aria-hidden="true"></i>enterpriseit.com.au</div>
             <div style="margin-top:18px;">
