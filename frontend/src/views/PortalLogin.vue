@@ -83,7 +83,7 @@
                 :class="{ error: errors.loginEmail }"
                 type="email" 
                 v-model="loginEmail" 
-                placeholder="your.name@company.com.au or jawad@gmail.com" 
+                placeholder="your.name@company.com.au" 
                 aria-label="Corporate Email Address" 
                 required
                 @input="errors.loginEmail = false"
